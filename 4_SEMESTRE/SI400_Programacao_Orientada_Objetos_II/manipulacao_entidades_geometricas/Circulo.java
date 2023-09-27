@@ -16,5 +16,4 @@ public class Circulo extends FormaGeometrica {
     public double calcularPerimetro() {
         return Math.PI * raio * 2;
     }
-
 }

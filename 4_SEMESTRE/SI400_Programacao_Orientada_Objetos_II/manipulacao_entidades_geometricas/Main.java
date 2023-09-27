@@ -14,8 +14,9 @@ public class Main {
         System.out.println(s1.toString());
 
         Coordenada centroCirculo = new Coordenada(0, 0);
-        Circulo circulo = new Circulo(centroCirculo, 5);
+        Circulo circulo = new Circulo(centroCirculo, 10);
         System.out.println("Area do circulo: " + circulo.calcularArea());
         System.out.println("Area do perimetro: " + circulo.calcularPerimetro());
+        
     }
 }
