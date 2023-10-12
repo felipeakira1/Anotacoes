@@ -29,7 +29,7 @@ public final class MariaDBConnection
             // You can use the 'connection' object for your database operations.
             }
          else
-            {
+	         {
             System.out.println("Failed to connect to the database.");
             }
          }
