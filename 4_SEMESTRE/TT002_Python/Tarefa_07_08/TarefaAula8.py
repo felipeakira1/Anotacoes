@@ -9,7 +9,7 @@ rota = Rota()
 # tempo em ms
 t = 100
 # Explicação do método abaixo.
-rota.espera(t)
+rota.espera(t)                                                      
 # Ao ser chamada, esta função deve fazer uma espera de t milisegundos.
 # Você não deve usar sleep. Você deve usar o time.time().
 # Além disso, a cada segundo, deve ser impresso uma mensagem conforme
