@@ -152,16 +152,14 @@ int altura(No * no) {
 No * busca_recursiva(No * no, int valor) {
     if(no == NULL) {
         return NULL;
+    }
+    if(valor == no->valor) {
+        return no;
+    }
+    if(valor < no->valor) {
+        busca_recursiva(no->esq);
     } else {
-        if(no->valor == valor) {
-            return no;
-        } else {
-            if(valor < no->valor) {
-                return busca_recursiva(no->esq, valor);
-            } else {
-                return busca_recursiva(no->dir, valor);
-            }
-        }
+        busca_recursiva(no->dir);
     }
 }
 
