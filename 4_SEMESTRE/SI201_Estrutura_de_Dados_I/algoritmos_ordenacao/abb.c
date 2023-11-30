@@ -157,9 +157,9 @@ No * busca_recursiva(No * no, int valor) {
         return no;
     }
     if(valor < no->valor) {
-        busca_recursiva(no->esq);
+        busca_recursiva(no->esq, valor);
     } else {
-        busca_recursiva(no->dir);
+        busca_recursiva(no->dir, valor);
     }
 }
 
