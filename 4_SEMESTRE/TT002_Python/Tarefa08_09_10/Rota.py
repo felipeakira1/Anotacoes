@@ -1,5 +1,6 @@
 from Coordenada import Coordenada
 import random
+import time
 
 class Rota:
     def __init__(self):
@@ -32,6 +33,9 @@ class Rota:
     def shuffle(self):
         random.shuffle(self.coordenadas)
 
+    def espera(self, time):
+        tin = time.time()
+        delta = time.time - tin;
 rota = Rota()
 try:
     rota.addCoord(Coordenada((0,0)))
@@ -43,5 +47,6 @@ try:
     rota2.shuffle()
     print(rota2)
     print(rota2.comprimento())
+    print(time.time())
 except Exception as e:
     print(e)
